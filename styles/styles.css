@@ -1,0 +1,446 @@
+:root {
+  --light-blue: #0dcaf0;
+  --light-black: #212529;
+  --text-color: white;
+  --typography: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--light-black);
+  color: var(--text-color);
+  background-image: linear-gradient(transparent,  rgba(33, 37, 41, 1)),
+                    url("../imagens/EDER-FOTO-BANNER-2.jpg") ;
+  background-repeat: no-repeat;
+  background-position: 80% 0%;  
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--light-blue);
+}
+
+h1 {
+  font-size: 3.5rem;
+  padding-top: 50px;
+}
+
+h2 {
+  color: var(--light-blue);
+}
+
+h3 {
+  font-size: 3rem;
+  padding: 25px 0 5px 0;
+}
+
+h3 > span:nth-of-type(1) {
+  color: var(--light-blue);
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+h4 > span {
+  color: var(--light-blue);
+}
+
+h5 {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+section {
+  padding-top: 20px;
+  width: 85rem;
+}
+
+.paragraph {
+  padding-bottom: 20px;
+}
+
+.top-bar { /* top bar of the site  */
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 80%;
+  padding: 0 10%;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(33, 37, 41,1), rgba(33, 37, 41, 0.5));
+}
+
+.menu { /* top menus on the left  */
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  list-style-type: none;
+}
+
+.menu-item > a {
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--light-blue);
+}
+
+.menu-item > a.active,
+.menu-item > a:hover,
+.menu-item > a:focus {
+  color: white;
+}
+
+.fixed-menu {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-container { /* General Grid container */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  grid-template-rows: repeat(5, 1fr); /*5 rows */
+  padding: 0 10%;
+}
+
+.grid-container > .grid-item {
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-column,
+.skills-column,
+.education-work-experience-column,
+.contact-me-column,
+.grid-item.home-column { /* Make all the columns occupy two columns */
+  grid-column: span 3;   /* Will start at vertical line 1 until line 3 */
+  text-align: center;
+}
+
+.grid-item.home-column {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  
+}
+
+.grid-item.home-column > .flex-item {
+  flex-basis: 35rem;
+  flex-shrink: 1;
+  flex-grow: 0;
+}
+/*banner text left*/
+.grid-item.home-column > .flex-item > div {
+  text-align: left;    
+}
+
+.flex-container { /* My Journey */
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px 0;
+}
+
+.flex-container > .flex-item > a {
+  color: var(--light-blue);
+}
+
+.about-me-flex { /* about me */
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.about-me-pic { /* about me picture */
+  margin-bottom: 25px;
+  border: 1px solid var(--light-blue);  
+  border-radius: 50%;    
+}
+
+#about-me-id .btn {
+  margin-bottom: 60px;
+}
+
+.about-me-item.about-me-pic img {
+  border-radius: 50%;
+  width: 180px;
+}
+
+i.bx { /* social icons - About me */
+  border-radius: 50%;
+  border: 2px solid var(--light-blue);
+  padding: 15px 20px 15px 20px;
+  font-size: 2.5rem;
+  transition: 0.9s ease-out 0.1s all;
+}
+
+i.bx:hover {
+  color: var(--light-black);
+  box-shadow: inset 5em 0 var(--light-blue);
+}
+
+.btn {
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: var(--light-blue);
+  border: 1px solid transparent;
+  font-weight: bold;
+  font-family: var(--typography);
+  color: var(--light-black);
+  width: 150px;
+  margin: 25px 0;
+  transition: 0.5s ease-out 0.1s all;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: inset 10em 0 var(--light-black);
+  color: var(--light-blue);
+}
+
+.btn-box .btn {
+  width: 250px!important;
+}
+
+.skills-flex-container { /* Skills */
+  display: flex;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-flex-container .flex-item {
+  padding: 15px;
+  min-width: 20rem;
+}
+
+.sub-skills-flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+.border-style {
+  border: 2px solid var(--light-blue);
+  border-radius: 5px;
+}
+
+.light-percentage {
+  /*width: 500px; px is very bad for responsiveness*/
+  /*width: 24rem; works but if we don't define width it'll be fine*/
+  height: 14px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.dark-percentage {
+  background-color: var(--light-blue);
+  height: 10px;
+}
+
+.percent-95 {
+  width: 95%;
+}
+
+.percent-90 {
+  width: 90%;
+}
+
+.percent-85 {
+  width: 85%;
+}
+
+.percent-75 {
+  width: 75%;
+}
+
+.percent-50 {
+  width: 50%;
+}
+
+.percent-45 {
+  width: 45%;
+}
+
+.percent-35 {
+  width: 35%;
+}
+
+.education-work { /* My Journey */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.education-style {
+  width: fit-content;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 10px;
+  height: 30%;
+}
+
+.stick { /* My Journey vertical sticks*/
+  height: 500px;
+  width: 2px;
+  background-color: var(--light-blue);
+  position: relative;
+}
+
+.thick-bullet { /* My Journey rounded little circles */
+  width: 30px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--light-blue);
+  position: absolute;
+}
+
+.thick-bullet-left { /* Place the circle along the stick */
+  left: -15px;
+}
+
+.thick-bullet-top-second { /* Place the circle along the stick */
+  top: 180px;
+}
+
+.thick-bullet-top-third { /* Place the circle along the stick */
+  top: 350px;
+}
+
+.blue { /* change calendar color on My Journey */
+  color: var(--light-blue);
+}
+
+.contact-me-div { /* Contact me */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30rem;
+  /*background-color: #0dcaf0;*/
+}
+
+.contact-me-div .item {
+  display: flex;
+  margin-bottom: 5px;
+  min-height: 3rem;
+  border: solid var(--light-blue);
+  border-radius: 10px;
+}
+
+.contact-me-div input {
+  flex-grow: 1;
+  background-color: var(--light-black);
+  border: none;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+
+::placeholder {
+  color: white;
+  font-size: 1rem;
+  opacity: 1; /* fix for firefox*/
+}
+
+.contact-me-div form {
+  width: 100%;
+  height: 28rem;
+  /*background-color: lightgreen;*/
+  padding: 0 10%;
+}
+
+.contact-me-div .flexbox {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  /*border: 3px solid black;*/
+  /*padding: 5px;*/  
+}
+
+.contact-me-div .flexbox > .flex-item {
+  /*border: 1px solid blue;*/
+  /*padding: 10px;*/
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  
+}
+
+.contact-me-div .text-area {
+  height: fit-content;  
+  /*border: 1px solid orange;*/
+  display: flex;
+}
+
+.contact-me-div textarea {
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 15rem;
+  background-color: var(--light-black);
+  border: 2px solid var(--light-blue);
+  border-radius: 10px;  
+}
+
+textarea:active, textarea:focus {
+  border: 2px solid var(--light-blue);
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+/* Animation */
+
+.line-1 {
+  border-right: 3px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+  transform: translateY(-50%);
+}
+
+.anim-typewriter {
+  animation: typewriter 4s steps(18) 1s 1 normal both,
+    blinkTextCursor 500ms steps(18) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* 1443.60 px at size some space appear in between sections */
+@media (max-width: 1414.6px) {
+  .grid-container {
+    grid-template-rows: repeat(5, auto);
+  }
+}
