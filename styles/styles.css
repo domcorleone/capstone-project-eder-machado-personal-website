@@ -3,6 +3,7 @@
   --light-black: #212529;
   --text-color: white;
   --typography: Verdana, Geneva, Tahoma, sans-serif;
+  --progress-bar-animation-time: 5s;
 }
 
 body {
@@ -451,6 +452,83 @@ textarea:active, textarea:focus {
 @keyframes m { /* change locations to show new animation */
   100% {
       transform: translateY(-300%);
+  }
+}
+
+.percent-95-animation {  
+  width: 10%; /*will overwrite the class .percent-95*/
+  animation: progress-bar-95 var(--progress-bar-animation-time) infinite;
+}
+
+.percent-90-animation {  
+  width: 10%; /*will overwrite the class .percent-95*/
+  animation: progress-bar-90 var(--progress-bar-animation-time) infinite;
+}
+
+.percent-85-animation {  
+  width: 0%; /*will overwrite the class .percent-95*/
+  animation: progress-bar-85 var(--progress-bar-animation-time) infinite;
+}
+
+.percent-75-animation {  
+  width: 0%; /*will overwrite the class .percent-95*/
+  animation: progress-bar-75 var(--progress-bar-animation-time) infinite;
+}
+
+.percent-50-animation {  
+  width: 0%; /*will overwrite the class .percent-95*/
+  animation: progress-bar-50 var(--progress-bar-animation-time) infinite;
+}
+
+.percent-45-animation {  
+  width: 0%; /*will overwrite the class .percent-95*/
+  animation: progress-bar-45 var(--progress-bar-animation-time) infinite;
+}
+
+.percent-35-animation {  
+  width: 0%; /*will overwrite the class .percent-95*/
+  animation: progress-bar-35 var(--progress-bar-animation-time) infinite;
+}
+
+@keyframes progress-bar-35 {  
+  100% {
+    width: 35%;
+  }
+}
+
+@keyframes progress-bar-45 {  
+  100% {
+    width: 45%;
+  }
+}
+
+@keyframes progress-bar-50 {  
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes progress-bar-75 {  
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes progress-bar-85 {  
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes progress-bar-90 {  
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes progress-bar-95 {  
+  100% {
+    width: 95%;
   }
 }
 
