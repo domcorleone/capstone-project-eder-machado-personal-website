@@ -433,28 +433,6 @@ textarea:active, textarea:focus {
   m 12s steps(3) infinite;
 }
 
-@keyframes cursor { /* caret or cursor */
-   0%, 100% { 
-    box-shadow: 5px 0 0 #0000;
-  }
-  50% { 
-    box-shadow: 5px 0 0 rgba(255, 255, 255, 0.75);
-  } 
-  
-}
-
-@keyframes typewriter { /* typewriter */
-  90%, 100% {
-      width: 100%;
-  }
-}
-
-@keyframes m { /* change locations to show new animation */
-  100% {
-      transform: translateY(-300%);
-  }
-}
-
 .percent-95-animation {  
   width: 10%; /*will overwrite the class .percent-95*/
   animation: progress-bar-95 var(--progress-bar-animation-time) infinite;
@@ -488,6 +466,28 @@ textarea:active, textarea:focus {
 .percent-35-animation {  
   width: 0%; /*will overwrite the class .percent-95*/
   animation: progress-bar-35 var(--progress-bar-animation-time) infinite;
+}
+
+@keyframes cursor { /* caret or cursor */
+   0%, 100% { 
+    box-shadow: 5px 0 0 #0000;
+  }
+  50% { 
+    box-shadow: 5px 0 0 rgba(255, 255, 255, 0.75);
+  } 
+  
+}
+
+@keyframes typewriter { /* typewriter */
+  90%, 100% {
+      width: 100%;
+  }
+}
+
+@keyframes m { /* change locations to show new animation */
+  100% {
+      transform: translateY(-300%);
+  }
 }
 
 @keyframes progress-bar-35 {  
@@ -531,49 +531,6 @@ textarea:active, textarea:focus {
     width: 95%;
   }
 }
-
-/* .line-1 {
- 
-  border-right: 3px solid rgba(255, 255, 255, 0.75);
-  font-size: 180%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-align: left;
-  transform: translateY(-50%);
-}
-
-.anim-typewriter {
-  animation: typewriter 2s forwards,
-    blinkTextCursor 500ms infinite;    
-}
-
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }  
-}
-
-@keyframes removeTxt {
-  from {
-    width: 12em;
-  }
-  to {
-    width: 0;
-  } 
- 
-}
-
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-} */
 
 /* 1443.60 px at size some space appear in between sections */
 @media (max-width: 1414.6px) {
