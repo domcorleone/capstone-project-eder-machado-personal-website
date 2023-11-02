@@ -1,5 +1,5 @@
 # Capstone Project - Personal Website
-My name is **Eder Machado**, I am **Angola** national and I was born and raised in **Angola** as well. I currently live and work in **USA** as a **Software Developer** and I have 12 years of experience in **computer industry**.
+My name is **Eder Machado**, I am **Angola** national and I was born and raised in **Angola** as well. I'm a **Software Developer** and I have 12 years of experience in **computer industry**.
 
 I 💙 programming and I'm very passionate about technology in general. This [website](https://domcorleone.github.io/capstone-project-eder-machado-personal-website/) is intended to show my journey as programmer and as I.T Professional.
 
