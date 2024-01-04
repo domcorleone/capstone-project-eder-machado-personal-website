@@ -29,6 +29,7 @@ I 💙 programming and I'm very passionate about technology in general. This [we
 
 ## Earned Certifications
 
+- Udemy [ The Complete Web development bootcamp 2023](https://www.udemy.com/certificate/UC-2bca95ad-d89c-437f-bd08-0ef5bccac02c/), Dec 2023
 - Freecodecamp [Javascript Algorithms and Data Structures](https://www.freecodecamp.org/certification/domcorleone/javascript-algorithms-and-data-structures), Jul 2023
 - Freecodecamp [Responsive Web Design](https://www.freecodecamp.org/certification/domcorleone/responsive-web-design), Jan 2023
 - Testout/CompTIA [Digital Literacy Pro Certification](https://certification.testout.com/managecert?certificateID=6-1C6-V4JFFQ), May 2023
