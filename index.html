@@ -67,10 +67,11 @@
                 </span>
               </h2>
               <p class="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                nisi ut aliquip ex ea commodo consequat. -->
+                IT professional with 10 years of experience in the software development business, very focused on organizations goals and internal and external customer satisfaction. With great learning capacity and willing to embrace new challenges.
               </p>
               <div class="btn-box">
                 <button type="button" class="btn">Hire me</button>
@@ -101,13 +102,18 @@
               </div>
               <div class="about-me-item paragraph">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                   vitae diam nec tellus tempor ultrices. Praesent rhoncus purus
                   id est euismod, nec commodo tortor ultrices. Cras accumsan
                   elementum interdum. Maecenas quis dolor ligula. In rutrum id
                   risus sed malesuada. Praesent varius velit odio, quis blandit
                   massa fringilla a. In maximus fermentum arcu, nec cursus risus
-                  sagittis eu. Nulla facilisi. Morbi vel lacinia augue.
+                  sagittis eu. Nulla facilisi. Morbi vel lacinia augue. -->
+                  Hi, my name is Eder Machado, I am Software Developer. I'm very
+                  passionate about technology and I 💙 programming. Like to learn,
+                  and not afraid to embrace new challenges. I started programmig when I 
+                  was 18 years old and since then I never stopped! Worked as help Desk 
+                  for 4 years and as Software Developer...
                 </p>
               </div>
             </div>
@@ -452,7 +458,7 @@
     <!----------------------------------------- Footer ----------------------------------------------------->
     <footer class="footer">
       <div class="copyright">
-        Copyright © 2023 By Eder Machado. All Rights Reserved | Design idea from 
+        Copyright © <span></span> By Eder Machado. All Rights Reserved | Design idea from 
         <a href="https://gilgamesh9x.github.io/responsive-portfolio-website/#home" target="_blank" rel="noopener noreferrer">Amine</a>
       </div>
       <div class="go-top">
@@ -461,5 +467,9 @@
         </a>
       </div>
     </footer>
+    <script>
+      const currentDate =  new Date().getFullYear();
+      document.querySelector(".copyright span").textContent = currentDate;
+    </script>
   </body>
 </html>
