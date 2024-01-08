@@ -402,7 +402,7 @@ textarea:active, textarea:focus {
   align-items: flex-end;
 }
 
-.footer a {
+.footer a, .education-style a {
   text-decoration: none;
 }
 
