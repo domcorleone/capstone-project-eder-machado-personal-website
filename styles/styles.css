@@ -338,17 +338,20 @@ i.bx:hover {
   border-radius: 10px;
 }
 
-.contact-me-div input {
+.contact-me-div input , textarea {
   flex-grow: 1;
   background-color: var(--light-black);
   border: none;
   border-radius: 10px;
   padding-left: 5px;
+  color: white;
+  font-size: 1.2rem;
+  padding-left: 20px;
 }
 
 ::placeholder {
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   opacity: 1; /* fix for firefox*/
 }
 
