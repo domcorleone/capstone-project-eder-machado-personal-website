@@ -56,6 +56,8 @@ h4 > span {
 h5 {
   font-weight: 800;
   font-size: 1rem;
+  margin-block-start: 1.2em;
+  margin-block-end: 1.2em;
 }
 
 section {
@@ -167,7 +169,7 @@ section {
 }
 
 #about-me-id .btn {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .about-me-item.about-me-pic img {
@@ -293,11 +295,12 @@ i.bx:hover {
   text-align: left;
   margin-bottom: 20px;
   padding: 10px;
-  height: 30%;
+  height: 25%;
+  max-width: 500px;
 }
 
 .stick { /* My Journey vertical sticks*/
-  height: 500px;
+  height: 485px;
   width: 2px;
   background-color: var(--light-blue);
   position: relative;
