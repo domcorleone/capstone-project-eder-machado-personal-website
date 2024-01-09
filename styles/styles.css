@@ -212,6 +212,12 @@ i.bx:hover {
   width: 250px!important;
 }
 
+.btn-box .btn:hover {
+  cursor: pointer;
+  box-shadow: inset 16em 0 var(--light-black);
+  color: var(--light-blue);
+}
+
 .skills-flex-container { /* Skills */
   display: flex;
   gap: 1.6rem;
