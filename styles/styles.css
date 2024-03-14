@@ -67,6 +67,8 @@ section {
 
 .paragraph {
   padding-bottom: 20px;
+  /* text-align: left; */
+  word-spacing: 0.5px;
 }
 
 .top-bar { /* top bar of the site  */
@@ -230,6 +232,7 @@ i.bx:hover {
 .skills-flex-container .flex-item {
   padding: 15px;
   min-width: 20rem;
+  flex: 1 1 0;
 }
 
 .sub-skills-flex-container {
@@ -296,7 +299,8 @@ i.bx:hover {
   margin-bottom: 20px;
   padding: 10px;
   height: 25%;
-  max-width: 500px;
+  /* max-width: 500px; */
+  max-width: 40.875rem;
 }
 
 .stick { /* My Journey vertical sticks*/
@@ -330,13 +334,8 @@ i.bx:hover {
   color: var(--light-blue);
 }
 
-.contact-me-div { /* Contact me */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 30rem;
-  /*background-color: #0dcaf0;*/
+.contact-me-div { /* Contact me */  
+  height: 30rem;  
 }
 
 .contact-me-div .item {
@@ -356,6 +355,7 @@ i.bx:hover {
   color: white;
   font-size: 1.2rem;
   padding-left: 20px;
+  width: 1rem;
 }
 
 ::placeholder {
@@ -365,23 +365,19 @@ i.bx:hover {
 }
 
 .contact-me-div form {
-  width: 100%;
+  display: flex;
+  flex-direction: column;  
   height: 28rem;
-  /*background-color: lightgreen;*/
-  padding: 0 10%;
+  
 }
 
 .contact-me-div .flexbox {
   display: flex;
   justify-content: center;
-  gap: 5px;
-  /*border: 3px solid black;*/
-  /*padding: 5px;*/  
+  gap: 5px; 
 }
 
-.contact-me-div .flexbox > .flex-item {
-  /*border: 1px solid blue;*/
-  /*padding: 10px;*/
+.contact-me-div .flexbox > .flex-item { 
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
@@ -418,13 +414,19 @@ textarea:active, textarea:focus {
   text-decoration: none;
 }
 
+.copyright {
+  padding-left: 10%;
+}
+
+.go-top {
+  padding-right: 10%;
+}
+
 /* Animation */
 /* https://dev.to/afif/a-scalable-css-only-typewriter-effect-2opn */
 
 .type {
-  display: inline-block;
-  /* border: 1px solid black;
-  padding: 10px; */
+  display: inline-block;  
 }
 
 .type span {

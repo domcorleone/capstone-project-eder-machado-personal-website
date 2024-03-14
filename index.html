@@ -458,9 +458,7 @@
     <!----------------------------------------- Footer ----------------------------------------------------->
     <footer class="footer">
       <div class="copyright">
-        Copyright © <span></span> By Eder Machado. All Rights Reserved | Design idea from 
-        <a href="https://gilgamesh9x.github.io/responsive-portfolio-website/#home" target="_blank" rel="noopener noreferrer">Amine</a>
-      </div>
+        Copyright © <span></span> Eder Machado.</div>
       <div class="go-top">
         <a href="#">
           <i class="bx bx-up-arrow-alt"></i>
@@ -470,6 +468,10 @@
     <script>
       const currentDate =  new Date().getFullYear();
       document.querySelector(".copyright span").textContent = currentDate;
+      // deactivate right click
+      // document.addEventListener('contextmenu', (event) =>{
+      //   event.preventDefault();
+      // });
     </script>
   </body>
 </html>
