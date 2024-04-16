@@ -11,10 +11,10 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: var(--light-black);
   color: var(--text-color);
-  background-image: linear-gradient(transparent,  rgba(33, 37, 41, 1)),
-                    url("../imagens/EDER-FOTO-BANNER-2.jpg") ;
+  background-image: linear-gradient(transparent, rgba(33, 37, 41, 1)),
+    url("../imagens/EDER-FOTO-BANNER-2.jpg");
   background-repeat: no-repeat;
-  background-position: 80% 0%;  
+  background-position: 80% 0%;
 }
 
 p {
@@ -71,17 +71,23 @@ section {
   word-spacing: 0.5px;
 }
 
-.top-bar { /* top bar of the site  */
+.top-bar {
+  /* top bar of the site  */
   display: flex;
   justify-content: space-between;
   position: fixed;
   width: 80%;
   padding: 0 10%;
   align-items: center;
-  background: linear-gradient(180deg, rgba(33, 37, 41,1), rgba(33, 37, 41, 0.5));
+  background: linear-gradient(
+    180deg,
+    rgba(33, 37, 41, 1),
+    rgba(33, 37, 41, 0.5)
+  );
 }
 
-.menu { /* top menus on the left  */
+.menu {
+  /* top menus on the left  */
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -110,7 +116,8 @@ section {
   justify-content: space-between;
 }
 
-.grid-container { /* General Grid container */
+.grid-container {
+  /* General Grid container */
   display: grid;
   grid-template-columns: 1fr 1fr; /* 2 columns */
   grid-template-rows: repeat(5, 1fr); /*5 rows */
@@ -126,15 +133,16 @@ section {
 .skills-column,
 .education-work-experience-column,
 .contact-me-column,
-.grid-item.home-column { /* Make all the columns occupy two columns */
-  grid-column: span 3;   /* Will start at vertical line 1 until line 3 */
+.grid-item.home-column {
+  /* Make all the columns occupy two columns */
+  grid-column: span 3; /* Will start at vertical line 1 until line 3 */
   text-align: center;
 }
 
 .grid-item.home-column {
   display: flex;
   align-items: center;
-  justify-content: flex-start;  
+  justify-content: flex-start;
 }
 
 .grid-item.home-column > .flex-item {
@@ -144,10 +152,11 @@ section {
 }
 /*banner text left*/
 .grid-item.home-column > .flex-item > div {
-  text-align: left;    
+  text-align: left;
 }
 
-.flex-container { /* My Journey */
+.flex-container {
+  /* My Journey */
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -158,16 +167,18 @@ section {
   color: var(--light-blue);
 }
 
-.about-me-flex { /* about me */
+.about-me-flex {
+  /* about me */
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
 }
 
-.about-me-pic { /* about me picture */
+.about-me-pic {
+  /* about me picture */
   margin-bottom: 25px;
-  border: 1px solid var(--light-blue);  
-  border-radius: 50%;    
+  border: 1px solid var(--light-blue);
+  border-radius: 50%;
 }
 
 #about-me-id .btn {
@@ -179,7 +190,8 @@ section {
   width: 180px;
 }
 
-i.bx { /* social icons - About me */
+i.bx {
+  /* social icons - About me */
   border-radius: 50%;
   border: 2px solid var(--light-blue);
   padding: 15px 20px 15px 20px;
@@ -213,7 +225,7 @@ i.bx:hover {
 }
 
 .btn-box .btn {
-  width: 250px!important;
+  width: 250px !important;
 }
 
 .btn-box .btn:hover {
@@ -222,7 +234,8 @@ i.bx:hover {
   color: var(--light-blue);
 }
 
-.skills-flex-container { /* Skills */
+.skills-flex-container {
+  /* Skills */
   display: flex;
   gap: 1.6rem;
   flex-wrap: wrap;
@@ -287,10 +300,12 @@ i.bx:hover {
   width: 35%;
 }
 
-.education-work { /* My Journey */
+.education-work {
+  /* My Journey */
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .education-style {
@@ -299,48 +314,68 @@ i.bx:hover {
   margin-bottom: 20px;
   padding: 10px;
   /* height: 25%; */
-  height: 30%;
+  /* height: 30%; */
   /* max-width: 500px; */
-  max-width: 40.875rem;
+  max-width: 20.875rem;
 }
 
-.stick { /* My Journey vertical sticks*/
+.stick {
+  /* My Journey vertical sticks*/
   /* height: 485px; */
-  height: 550px;
-  width: 2px;
-  background-color: var(--light-blue);
+  /* height: 550px; */
+  /* width: 2px;
+  background-color: var(--light-blue); */
   position: relative;
-  
 }
 
-.thick-bullet { /* My Journey rounded little circles */
+.stick:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: -200px;
+  background-color: var(--light-blue);
+  width: 2px;
+}
+
+.thick-bullet {
+  /* My Journey rounded little circles */
   width: 30px;
   height: 20px;
   border-radius: 50%;
   background-color: var(--light-blue);
-  position: absolute;
+  /* position: absolute; */
 }
 
-.thick-bullet-left { /* Place the circle along the stick */
+.thick-bullet-left {
+  /* Place the circle along the stick */
   left: -15px;
 }
 
-.thick-bullet-top-second { /* Place the circle along the stick */
+.thick-bullet-top-second {
+  /* Place the circle along the stick */
   /* top: 180px; */
   top: 200px;
 }
 
-.thick-bullet-top-third { /* Place the circle along the stick */
+.thick-bullet-top-third {
+  /* Place the circle along the stick */
   /* top: 350px; */
   top: 400px;
 }
 
-.blue { /* change calendar color on My Journey */
+.bullet-education-group {
+  display: flex;
+  gap: 3px;
+}
+
+.blue {
+  /* change calendar color on My Journey */
   color: var(--light-blue);
 }
 
-.contact-me-div { /* Contact me */  
-  height: 30rem;  
+.contact-me-div {
+  /* Contact me */
+  height: 30rem;
 }
 
 .contact-me-div .item {
@@ -351,7 +386,8 @@ i.bx:hover {
   border-radius: 10px;
 }
 
-.contact-me-div input , textarea {
+.contact-me-div input,
+textarea {
   flex-grow: 1;
   background-color: var(--light-black);
   border: none;
@@ -372,26 +408,24 @@ i.bx:hover {
 
 .contact-me-div form {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   height: 28rem;
-  
 }
 
 .contact-me-div .flexbox {
   display: flex;
   justify-content: center;
-  gap: 5px; 
+  gap: 5px;
 }
 
-.contact-me-div .flexbox > .flex-item { 
+.contact-me-div .flexbox > .flex-item {
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-  
 }
 
 .contact-me-div .text-area {
-  height: fit-content;  
+  height: fit-content;
   /*border: 1px solid orange;*/
   display: flex;
 }
@@ -402,10 +436,11 @@ i.bx:hover {
   height: 15rem;
   background-color: var(--light-black);
   border: 2px solid var(--light-blue);
-  border-radius: 10px;  
+  border-radius: 10px;
 }
 
-textarea:active, textarea:focus {
+textarea:active,
+textarea:focus {
   border: 2px solid var(--light-blue);
 }
 
@@ -416,7 +451,8 @@ textarea:active, textarea:focus {
   align-items: flex-end;
 }
 
-.footer a, .education-style a {
+.footer a,
+.education-style a {
   text-decoration: none;
 }
 
@@ -432,14 +468,14 @@ textarea:active, textarea:focus {
 /* https://dev.to/afif/a-scalable-css-only-typewriter-effect-2opn */
 
 .type {
-  display: inline-block;  
+  display: inline-block;
 }
 
 .type span {
-  display: grid;  
-  height: 1.2em;  
-  overflow: hidden;   
-  border: none;     
+  display: grid;
+  height: 1.2em;
+  overflow: hidden;
+  border: none;
 }
 
 .type span span {
@@ -449,104 +485,107 @@ textarea:active, textarea:focus {
   height: inherit;
   word-break: break-all;
   animation: cursor 0.5s infinite steps(1),
-  typewriter 2s linear infinite alternate,
-  m 12s steps(3) infinite;
+    typewriter 2s linear infinite alternate, m 12s steps(3) infinite;
 }
 
-.percent-95-animation {  
+.percent-95-animation {
   width: 10%; /*will overwrite the class .percent-95*/
   animation: progress-bar-95 var(--progress-bar-animation-time) infinite;
 }
 
-.percent-90-animation {  
+.percent-90-animation {
   width: 10%; /*will overwrite the class .percent-95*/
   animation: progress-bar-90 var(--progress-bar-animation-time) infinite;
 }
 
-.percent-85-animation {  
+.percent-85-animation {
   width: 0%; /*will overwrite the class .percent-95*/
   animation: progress-bar-85 var(--progress-bar-animation-time) infinite;
 }
 
-.percent-75-animation {  
+.percent-75-animation {
   width: 0%; /*will overwrite the class .percent-95*/
   animation: progress-bar-75 var(--progress-bar-animation-time) infinite;
 }
 
-.percent-50-animation {  
+.percent-50-animation {
   width: 0%; /*will overwrite the class .percent-95*/
   animation: progress-bar-50 var(--progress-bar-animation-time) infinite;
 }
 
-.percent-45-animation {  
+.percent-45-animation {
   width: 0%; /*will overwrite the class .percent-95*/
   animation: progress-bar-45 var(--progress-bar-animation-time) infinite;
 }
 
-.percent-35-animation {  
+.percent-35-animation {
   width: 0%; /*will overwrite the class .percent-95*/
   animation: progress-bar-35 var(--progress-bar-animation-time) infinite;
 }
 
-@keyframes cursor { /* caret or cursor */
-   0%, 100% { 
+@keyframes cursor {
+  /* caret or cursor */
+  0%,
+  100% {
     box-shadow: 5px 0 0 #0000;
   }
-  50% { 
+  50% {
     box-shadow: 5px 0 0 rgba(255, 255, 255, 0.75);
-  } 
-  
-}
-
-@keyframes typewriter { /* typewriter */
-  90%, 100% {
-      width: 100%;
   }
 }
 
-@keyframes m { /* change locations to show new animation */
+@keyframes typewriter {
+  /* typewriter */
+  90%,
   100% {
-      transform: translateY(-300%);
+    width: 100%;
   }
 }
 
-@keyframes progress-bar-35 {  
+@keyframes m {
+  /* change locations to show new animation */
+  100% {
+    transform: translateY(-300%);
+  }
+}
+
+@keyframes progress-bar-35 {
   100% {
     width: 35%;
   }
 }
 
-@keyframes progress-bar-45 {  
+@keyframes progress-bar-45 {
   100% {
     width: 45%;
   }
 }
 
-@keyframes progress-bar-50 {  
+@keyframes progress-bar-50 {
   100% {
     width: 50%;
   }
 }
 
-@keyframes progress-bar-75 {  
+@keyframes progress-bar-75 {
   100% {
     width: 75%;
   }
 }
 
-@keyframes progress-bar-85 {  
+@keyframes progress-bar-85 {
   100% {
     width: 85%;
   }
 }
 
-@keyframes progress-bar-90 {  
+@keyframes progress-bar-90 {
   100% {
     width: 90%;
   }
 }
 
-@keyframes progress-bar-95 {  
+@keyframes progress-bar-95 {
   100% {
     width: 95%;
   }
@@ -560,8 +599,60 @@ textarea:active, textarea:focus {
 }
 
 /* All page to scroll between section in smooth way */
-@media (prefers-reduced-motion: no-preference ) {
+@media (prefers-reduced-motion: no-preference) {
   * {
     scroll-behavior: smooth;
+  }
+}
+
+/* Fixing My Journey Section */
+@media (min-width: 1530.4px) {
+  .education-work
+    > .bullet-education-group:nth-of-type(4)
+    .thick-bullet.stick:before,
+  .education-work
+    > .bullet-education-group:nth-of-type(5)
+    .thick-bullet.stick:before,
+  .education-work
+    > .bullet-education-group:nth-of-type(6)
+    .thick-bullet.stick:before {
+    bottom: -160px;
+  }
+}
+
+@media (min-width: 1017.60px) {
+  .education-work
+    > .bullet-education-group:nth-of-type(5)
+    .thick-bullet.stick:before,
+  .education-work
+    > .bullet-education-group:nth-of-type(6)
+    .thick-bullet.stick:before {
+    bottom: -160px;
+  }
+}
+
+@media (max-width: 1016px) {
+  .education-work
+    > .bullet-education-group:nth-of-type(5)
+    .thick-bullet.stick:before,
+    .education-work
+    > .bullet-education-group:nth-of-type(4)
+    .thick-bullet.stick:before,
+    .education-work
+    > .bullet-education-group:nth-of-type(3)
+    .thick-bullet.stick:before,
+    .education-work
+    > .bullet-education-group:nth-of-type(2)
+    .thick-bullet.stick:before,
+    .education-work
+    > .bullet-education-group:nth-of-type(1)
+    .thick-bullet.stick:before {
+      bottom: -240px;
+    }
+ 
+  .education-work
+    > .bullet-education-group:nth-of-type(6)
+    .thick-bullet.stick:before {
+    bottom: -160px;
   }
 }
