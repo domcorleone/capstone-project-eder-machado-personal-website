@@ -65,6 +65,15 @@ section {
   width: 85rem;
 }
 
+.title-logo-lastname {
+  text-decoration: none;
+  color: white;
+}
+
+.title-logo-firstname {
+  text-decoration: none;
+  
+}
 .paragraph {
   padding-bottom: 20px;
   /* text-align: left; */
@@ -133,6 +142,7 @@ section {
 .skills-column,
 .education-work-experience-column,
 .contact-me-column,
+.portfolio-column,
 .grid-item.home-column {
   /* Make all the columns occupy two columns */
   grid-column: span 3; /* Will start at vertical line 1 until line 3 */
