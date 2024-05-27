@@ -383,6 +383,32 @@ i.bx:hover {
   color: var(--light-blue);
 }
 
+.portfolio{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 0.8rem;
+}
+
+.portfolio-item {
+  border: 1px solid var(--light-blue);
+  overflow: hidden;
+ 
+}
+
+.portfolio-item img {
+  height: 100%;
+  max-width: 100%;
+  /* opacity: 0.6; */
+  transition: 0.5s ease-out 0.1s all;
+}
+
+.portfolio-item img:hover {
+  cursor: pointer;
+  /* opacity: 1;   */
+  transform: scale(1.5);
+}
+
+
 .contact-me-div {
   /* Contact me */
   height: 30rem;
